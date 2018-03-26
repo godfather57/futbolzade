@@ -24,6 +24,7 @@ class Yardımcılar(models.Model):
 class Hoca(models.Model):
 	isim = models.CharField(max_length=100)
 	ali = models.CharField(max_length=100)
+	veli = models.CharField(max_length=100)
 	dogum_tarihi=models.DateTimeField(verbose_name="Doğum Tarihi",auto_now=True)
 	yaş = models.IntegerField(verbose_name="Yaş",blank=True,null=True)
 	ülke = models.ForeignKey(Ülke, on_delete=models.CASCADE)

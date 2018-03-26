@@ -4,11 +4,14 @@ __pycache__
 myvenv
 db.sqlite3
 .DS_Store
+
 home/migrations/*
-!home/__init__.py
-!home/migrations
+!home/migrations/__init__.py
+
+
 klup/migrations/*
-!klup/__init__.py
+!klup/migrations/__init__.py
+
 ligler/migrations/*
-!ligler/__init__.py
+!ligler/migrations/__init__.py
 

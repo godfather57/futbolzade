@@ -1,0 +1,41 @@
+		if self.sarıkartlar.exists():
+		    for futbolcu in self.sarıkartlar.all():
+			    futbolcu.toplam_sarıkart_sayısı+=1
+			    futbolcu.save()
+				
+		if self.kırmızıkartlar1.exists():
+		    for futbolcu in self.kırmızıkartlar.all():
+			    futbolcu.toplam_kırmızı_sayısı+=1
+			    futbolcu.save()
+				
+		if self.kırmızıkartlar2.exists():
+		    for futbolcu in self.kırmızıkartlar.all():
+			    futbolcu.toplam_kırmızı_sayısı+=1
+			    futbolcu.save()
+				
+
+				
+		if self.sarıkartlar2.exists():
+		    for futbolcu in self.sarıkartlar.all():
+			    futbolcu.toplam_sarıkart_sayısı+=1
+			    futbolcu.save()
+		
+
+		
+		if self.goller:
+		    for futbolcu in self.goller.all():
+			    a=self.goller.filter(isim=futbolcu.isim).count()
+			    futbolcu.toplam_gol_sayısı+=a
+			    #print(futbolcu)
+			    #print(futbolcu.toplam_gol_sayısı)
+			    futbolcu.save()
+			    #print(futbolcu.toplam_gol_sayısı)
+		
+		if self.asistler:
+		    for futbolcu in self.asistler.all():
+			    a=self.asistler.filter(isim=futbolcu.isim).count()
+			    futbolcu.toplam_asist_sayısı+=a
+			    #print(futbolcu)
+			    #print(futbolcu.toplam_gol_sayısı)
+			    futbolcu.save()
+			    #print(futbolcu.toplam_gol_sayısı)

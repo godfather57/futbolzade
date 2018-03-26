@@ -1,0 +1,18 @@
+*.pyc
+*~
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
+home/migrations/*
+<<<<<<< HEAD
+!home/__init__.py
+klup/migrations/*
+!klup/__init__.py
+ligler/migrations/*
+!ligler/__init__.py
+=======
+home/migrations/*
+home/migrations/*
+>>>>>>> as

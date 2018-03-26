@@ -6,6 +6,7 @@ db.sqlite3
 .DS_Store
 home/migrations/*
 !home/__init__.py
+!home/migrations
 klup/migrations/*
 !klup/__init__.py
 ligler/migrations/*
